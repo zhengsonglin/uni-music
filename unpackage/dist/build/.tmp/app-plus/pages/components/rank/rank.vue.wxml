@@ -1,0 +1,1 @@
+<import src="/components/scroll/scroll.vue.wxml" /><import src="/components/loading/loading.vue.wxml" /><template name="5167e782"><view class="_view data-v-db9c85bc rank" ref="rank"><template ref="toplist" data="{{...$root['0'], ...$root[$kk+'5167e782-1'],$root, $slotdefault:'data-v-db9c85bc-default-5167e782-1'}}" is="64292ef4"></template></view></template>

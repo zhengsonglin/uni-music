@@ -1,0 +1,87 @@
+{
+    "pages" : [
+        //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+        {
+            "path" : "pages/index/index",
+            "style" : {
+                "navigationBarTitleText" : "Chicken Music", //导航栏标题文字内容
+                "navigationBarBackgroundColor" : "#000", //导航栏背景颜色
+                "navigationBarTextStyle" : "white", //导航栏标题颜色，仅支持 black/white
+                "h5" : {
+                    "backgroundColor" : "#f00"
+                },
+                "app-plus" : {
+                    "titleNView" : false,
+                    "bounce" : "none",
+                    "scrollIndicator" : "none",
+                    "pullToRefresh" : {
+                        "style" : "circle",
+                        "offset" : "70px",
+                        "color" : "#007AFF"
+                    }
+                }
+            }
+        },
+        {
+            "path" : "pages/home/home",
+            "style" : {
+                "enablePullDownRefresh" : false
+            }
+        },
+        {
+            "path" : "pages/recommend/reDetail",
+            "style" : {}
+        },
+        {
+            "path" : "pages/components/user/user",
+            "style" : {}
+        },
+		{
+		    "path" : "pages/singer/singerDetail",
+		    "style" : {}
+		},
+		{
+		    "path" : "pages/rank/rankDetail",
+		    "style" : {}
+		}
+    ],
+    "subPackages" : [
+        {
+            "root" : "pages",
+            "pages" : [
+                {
+                    "path" : "tabbar/tabbar",
+                    "style" : {
+                        "navigationBarTitleText" : "可拖动顶部选项卡",
+                        "app-plus" : {
+                            "titleNView" : {
+                                "titleText" : "可拖动顶部选项卡（原生）"
+                            }
+                        },
+                        "h5" : {
+                            "titleNView" : {
+                                "titleText" : "可拖动顶部选项卡"
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "globalStyle" : {
+        "navigationBarTextStyle" : "black",
+        "navigationBarTitleText" : "Chicken Music",
+        "navigationBarBackgroundColor" : "#000",
+        "backgroundColor" : "#000",
+        //自定义取消原生导航
+        "navigationStyle" : "custom" //默认default
+    },
+    "tabBar" : {
+        "color" : "#7A7E83",
+        "selectedColor" : "#007AFF",
+        "borderStyle" : "black",
+        "backgroundColor" : "#F8F8F8",
+        "position" : "top",
+        "list" : []
+    }
+}

@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/home",
+    "pages/recommend/reDetail",
+    "pages/components/user/user",
+    "pages/singer/singerDetail",
+    "pages/rank/rankDetail"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Chicken Music",
+    "navigationBarBackgroundColor": "#000",
+    "backgroundColor": "#000",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#007AFF",
+    "borderStyle": "black",
+    "backgroundColor": "#F8F8F8",
+    "position": "top",
+    "list": []
+  },
+  "nvue": {
+    "pages": {
+      "pages/tabbar/tabbar.html": {
+        "window": {
+          "navigationBarTitleText": "可拖动顶部选项卡",
+          "titleNView": {
+            "titleText": "可拖动顶部选项卡（原生）"
+          }
+        }
+      }
+    }
+  },
+  "splashscreen": {
+    "autoclose": true
+  },
+  "appname": "uni-music"
+}

@@ -1,0 +1,1 @@
+<import src="/pages/components/music-list/music-list.vue.wxml" /><template name="a4ba4812"><transition name="slide" class="_transition data-v-85987958"><template data="{{...$root['0'], ...$root[$kk+'a4ba4812-0'],$root}}" is="e168dc82"></template></transition></template>

@@ -1,0 +1,1 @@
+<template name="6eb90a14"><canvas ref="bubble" width="{{width}}" height="{{height}}" canvas-id="bubble-canvas" id="bubble-canvas" class="_canvas data-v-a7cc7ac6" style=" {{style}}"></canvas></template>

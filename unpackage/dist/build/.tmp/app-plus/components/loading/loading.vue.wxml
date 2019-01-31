@@ -1,0 +1,1 @@
+<template name="6831e664"><view class="_div 6831e664 mf-loading-container {{align}}"><image src="./loading.gif" width="24" height="24" class="_img 6831e664"></image><view class="_p 6831e664 desc" style=" {{('color:' + color + ';')}}">{{title}}</view></view></template>

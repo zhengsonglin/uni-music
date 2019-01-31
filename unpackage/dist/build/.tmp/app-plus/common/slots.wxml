@@ -1,0 +1,47 @@
+<import src="/components/uni-nav-bar.vue.wxml" />
+<import src="/components/switches/switches.vue.wxml" />
+<import src="/components/scroll/scroll.vue.wxml" />
+<import src="/pages/components/song-list/song-list.vue.wxml" />
+<import src="/pages/components/no-result/no-result.vue.wxml" />
+<import src="/components/loading/loading.vue.wxml" />
+<import src="/pages/components/search-box/search-box.vue.wxml" />
+<import src="/pages/components/search-list/search-list.vue.wxml" />
+<import src="/pages/components/suggest/suggest.vue.wxml" />
+<import src="/pages/components/confirm/confirm.vue.wxml" />
+<import src="/components/uni-load-more.vue.wxml" />
+<import src="/pages/components/recommend/recommend.vue.wxml" />
+<import src="/pages/components/singer/singer.vue.wxml" />
+<import src="/pages/components/rank/rank.vue.wxml" />
+<import src="/pages/components/search/search.vue.wxml" />
+<import src="/components/page-header.vue.wxml" />
+<import src="/components/page-tab.vue.wxml" />
+<import src="/pages/components/music-list/music-list.vue.wxml" />
+<import src="/components/uni-status-bar.vue.wxml" />
+<import src="/components/uni-icon.vue.wxml" />
+<import src="/common/slots.wxml" />
+<import src="/pages/components/list-view/list-view.vue.wxml" />
+
+<template name="65a23f70-default-65a23f70-0"><view class="_view 65a23f70 center uni-center"><image src="../../static/images/logo.png" mode="widthFix" class="_image 65a23f70 logo"></image>Chicken Music</view></template>
+
+<template name="65a23f70-left-65a23f70-0"></template>
+
+<template name="65a23f70-right-65a23f70-0"><image src="../../static/images/user.png" mode="widthFix" class="_image 65a23f70 user"></image></template>
+
+<template name="data-v-09be1c44-default-11c9f79f-2"><view class="_div data-v-09be1c44 list-inner"><template bindselect="handleProxy" data-eventid="{{'11c9f79f-3'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'11c9f79f-1'],$root}}" is="503d01ed"></template></view></template>
+
+<template name="data-v-09be1c44-default-11c9f79f-4"><view class="_div data-v-09be1c44 list-inner"><template bindselect="handleProxy" data-eventid="{{'11c9f79f-4'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'11c9f79f-3'],$root}}" is="503d01ed"></template></view></template>
+
+<template name="data-v-db9f1538-default-e168dc82-1"><view class="_div data-v-db9f1538 song-list-wrapper"><template bindselect="handleProxy" data-eventid="{{'e168dc82-2'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'e168dc82-0'],$root}}" is="503d01ed"></template></view><view class="_div data-v-db9f1538 loading-container" hidden="{{!(!songs.length)}}"></view></template>
+
+<template name="data-v-db9c85bc-default-5167e782-1"><view wx:if="{{topList.length}}" class="_ul data-v-db9c85bc"><view bindtap="handleProxy" class="_li data-v-db9c85bc item" wx:key="pIndex" key="{{pIndex}}" data-eventid="{{'5167e782-0-'+pIndex}}" data-comkey="{{$k}}" wx:for="{{topList}}" wx:for-index="pIndex" wx:for-item="item"><view class="_div data-v-db9c85bc icon"><image width="100" height="100" class="_img data-v-db9c85bc"></image></view><view class="_ul data-v-db9c85bc songlist"><view class="_li data-v-db9c85bc song" wx:key="index" key="{{index}}" wx:for="{{item.songList}}" wx:for-index="index" wx:for-item="song"><label class="_span data-v-db9c85bc">{{index + 1}}</label><label class="_span data-v-db9c85bc">{{song.songname}}-{{song.singername}}</label></view></view></view></view><view class="_div data-v-db9c85bc loading-container" wx:else><template title="加载中..." align="vertical" color="#ddd" data="{{...$root['0'], ...$root[$kk+'5167e782-0'],$root}}" is="6831e664"></template></view></template>
+
+<template name="27dda802-default-27dda802-2"><view class="_div 27dda802"><view class="_div 27dda802 hot-key"><view class="_h1 27dda802 title">热门搜索</view><view class="_ul 27dda802"><view class="_li 27dda802 item" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'27dda802-2-'+index}}" data-comkey="{{$k}}" wx:for="{{hotKey}}" wx:for-index="index" wx:for-item="item"><label class="_span 27dda802">{{item.k}}</label></view></view></view><view class="_div 27dda802 search-history" hidden="{{!(searchHistory.length)}}"><view class="_h1 27dda802 title"><label class="_span 27dda802 text">搜索历史</label><label class="_span 27dda802 clear" bindtap="handleProxy" data-eventid="{{'27dda802-3'}}" data-comkey="{{$k}}"><view class="_i 27dda802 icon-clear"></view></label></view><template bindselect="handleProxy" binddelete="handleProxy" data-eventid="{{'27dda802-4'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'27dda802-1'],$root}}" is="a30be172"></template></view></view></template>
+
+<template name="8779518e-default-8779518e-5"><view class="_view 8779518e recommend"><view class="_view 8779518e page-section swiper"><view class="_view 8779518e page-section-spacing"><swiper class="_swiper 8779518e swiper" indicator-dots="{{swiper.indicatorDots}}" autoplay="{{swiper.autoplay}}" interval="{{swiper.interval}}" duration="{{swiper.duration}}" circular="{{swiper.circular}}"><swiper-item wx:key="index" key="{{index}}" wx:for="{{recommends}}" wx:for-index="index" wx:for-item="item" class="_swiper-item 8779518e"><view class="_view 8779518e swiper-item"><navigator url="{{item.linkUrl}}" target="_blank" class="_a 8779518e"><image bindload="handleProxy" src="{{item.picUrl}}" mode="aspectFill" class="_image 8779518e slideImg" data-eventid="{{'8779518e-0-'+index}}" data-comkey="{{$k}}"></image></navigator></view></swiper-item></swiper></view></view><view class="_view 8779518e recommend-list"><view class="_view 8779518e list-title">热门歌单推荐</view><view wx:if="{{discList.length}}" class="_ul 8779518e"><view catchtap="handleProxy" wx:key="index" key="{{index}}" class="_li 8779518e item" data-eventid="{{'8779518e-1-'+index}}" data-comkey="{{$k}}" wx:for="{{discList}}" wx:for-index="index" wx:for-item="item"><view class="_view 8779518e icon"><image src="{{item.imgurl}}" mode="widthFix" lazy-load="{{true}}" class="_image 8779518e item-img"></image></view><view class="_view 8779518e text"><rich-text nodes="{{item.creator.name}}" class="_rich-text 8779518e name"></rich-text><rich-text nodes="{{item.dissname}}" class="_rich-text 8779518e desc"></rich-text></view></view></view><view class="_view 8779518e loading-container" wx:else><template title="加载中..." align="vertical" color="#ddd" data="{{...$root['0'], ...$root[$kk+'8779518e-3'],$root}}" is="6831e664"></template></view></view></view></template>
+
+<template name="8779518e-pullup-8779518e-5"><view class="_view 8779518e uni-tab-bar-loading"><template data="{{...$root['0'], ...$root[$kk+'8779518e-4'],$root}}" is="6241dc38"></template></view></template>
+
+<template name="data-v-077c6241-default-37dfa6ae-2"><view wx:if="{{data.length}}" class="_ul data-v-077c6241"><view wx:key="index" key="{{index}}" class="_li data-v-077c6241 list-group" ref="listGroup" wx:for="{{data}}" wx:for-index="index" wx:for-item="group"><view class="_h2 data-v-077c6241 list-group-title">{{group.title}}</view><u-l class="_u-l data-v-077c6241"><view bindtap="handleProxy" wx:key="sIndex" key="{{sIndex}}" class="_li data-v-077c6241 list-group-item" data-eventid="{{'37dfa6ae-0-'+index+'-'+sIndex}}" data-comkey="{{$k}}" wx:for="{{group.items}}" wx:for-index="sIndex" wx:for-item="item"><image class="_img data-v-077c6241 avatar"></image><label class="_span data-v-077c6241 name">{{item.name}}</label></view></u-l></view></view><view class="_div data-v-077c6241 loading-container" wx:else><template title="加载中..." align="vertical" color="#ddd" data="{{...$root['0'], ...$root[$kk+'37dfa6ae-1'],$root}}" is="6831e664"></template></view></template>
+
+<template name="data-v-23c53240-default-cb15e7ee-2"><view class="_view data-v-23c53240"><view class="_ul data-v-23c53240 suggest-list"><view bindtap="handleProxy" class="_li data-v-23c53240 suggest-item" wx:key="index" key="{{index}}" data-eventid="{{'cb15e7ee-0-'+index}}" data-comkey="{{$k}}" wx:for="{{result}}" wx:for-index="index" wx:for-item="item"><view class="_div data-v-23c53240 icon"><view class="_i data-v-23c53240 {{getIconCls(item)}}"></view></view><view class="_div data-v-23c53240 name"><rich-text class="_p data-v-23c53240 text" nodes="{{getDisplayName(item)}}"></rich-text></view></view><template hidden="{{!(hasMore && !result.length)}}" title="加载中..." align="vertical" color="#ddd" data="{{...$root['0'], ...$root[$kk+'cb15e7ee-0'],$root}}" is="6831e664"></template></view><view hidden="{{!(!hasMore && !result.length)}}" class="_div data-v-23c53240 no-result-wrapper"><template title="抱歉，暂无搜索结果" data="{{...$root['0'], ...$root[$kk+'cb15e7ee-1'],$root}}" is="117764d3"></template></view></view></template>
+

@@ -1,0 +1,1 @@
+<import src="/components/page-header.vue.wxml" /><import src="/components/page-tab.vue.wxml" /><template name="485c2834"><view class="_view 485c2834 page-home"><template data="{{...$root['0'], ...$root[$kk+'485c2834-0'],$root}}" is="65a23f70"></template><template data="{{...$root['0'], ...$root[$kk+'485c2834-1'],$root}}" is="f6c574dc"></template></view></template>
